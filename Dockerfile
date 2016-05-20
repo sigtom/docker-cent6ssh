@@ -4,4 +4,3 @@ RUN yum -y install nano wget mlocate telnet openssh-server.x86_64 openssh-client
 RUN yum -y update
 EXPOSE 22
 CMD ["/bin/bash"]
-ENTRYPOINT service sshd restart && bash
